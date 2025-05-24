@@ -7,6 +7,13 @@ import { z } from "zod";
 
 const DEFAULT_CONFIG = {
   editor: process.platform === "win32" ? "notepad" : "nano",
+  aliases: {
+    tmu: "template use",
+    tmc: "template create",
+    tme: "template edit",
+    tmd: "template delete",
+    tml: "template list",
+  },
 };
 
 export const setupConfig = () => {
@@ -31,6 +38,7 @@ export const setupConfig = () => {
 
 const configSchema = z.object({
   editor: z.string().min(1),
+  aliases: z.record(z.string().min(1)),
 });
 
 type Config = z.infer<typeof configSchema>;
