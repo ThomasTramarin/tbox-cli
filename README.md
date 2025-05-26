@@ -44,11 +44,16 @@ Example `config.json` content:
 ```json
 {
   "editor": "code"
+  "aliases": {
+    "tmc": "template create"
+  }
 }
 ```
 
 - `"editor"`: defines the command used to open the editor (e.g., `vim`, `code`, `nano`, `notepad`)
+- `"aliases"`: define your own command shortcuts
 
 ## Features
 
 - [Templates](./docs/Template.MD#\menu)
+- [Aliases](./docs/Alias.MD)
