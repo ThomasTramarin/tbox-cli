@@ -1,8 +1,14 @@
 ## 📝 Changelog
 
+### v1.3.0
+
+- Improved code quality and structure for alias management
+- Added full support for command aliases with create, list, edit, and delete operations
+- Enabled alias commands integration directly in CLI
+
 ### v1.2.0
 
-- Added support for command aliases configurable via `config.json`
+- Added support for command aliases configurable via config.json
 
 ### v1.1.0
 
