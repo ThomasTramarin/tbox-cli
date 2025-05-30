@@ -25,7 +25,7 @@ async function main() {
     .description(
       "A flexible and extensible CLI for templates, automation, scaffolding, and more."
     )
-    .version("1.2.0");
+    .version("1.3.0");
 
   TemplateCommand.register(program);
   AliasCommand.register(program);
